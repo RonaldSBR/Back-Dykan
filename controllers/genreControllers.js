@@ -48,7 +48,7 @@ async function destroy(req, res) {
     await Genre.findByIdAndDelete(req.params.id);
     res.status(200).json("Genre Removed");
   } catch (err) {
-    res.status(500).json("Server error");
+    res.status(500).json("Server errors");
   }
 }
 
